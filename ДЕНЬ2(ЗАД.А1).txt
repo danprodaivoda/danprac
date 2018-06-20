@@ -1,0 +1,18 @@
+import datetime
+from copy import deepcopy
+def printTimeStamp(name):
+    print('prodaivoda yan prodaivoda dan: ' + name)
+    print('Час компіляції: ' + str(datetime.datetime.now()))
+ 
+
+l = [3, 6, 2, 7, 3, 5, 8, 4, 5, 3]
+a = []
+for x in l:
+    if not x in a:
+        a.append(x)
+a2 = deepcopy(a)
+a2.remove(a2[0])
+a2.remove(a2[2])      
+a2.remove(a2[3])      
+      
+print(a2)
